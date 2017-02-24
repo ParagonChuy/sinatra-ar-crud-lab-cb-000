@@ -1,7 +1,6 @@
 <h1>Posts</h1>
-<ol>
-  <%= @posts.each do |post| %>
-    <li><%= post.name %></li>
-    <li><%= post.content %></li>
-  <%= end %>
-</ol>
+  <% @posts.each do |post| %>
+    <%= post.id%>
+    <%= post.name %>
+    <%= post.content %>
+  <% end %>
